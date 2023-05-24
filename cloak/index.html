@@ -4,7 +4,7 @@
 <body>
 <button onclick="openGame2()">Open Game</button>
 <script>
-function openGame() {
+/*function openGame() {
 var win = window.open()
 var url = "https://py660.github.io/video.mp4"
 var iframe = win.document.createElement('iframe')
@@ -16,10 +16,10 @@ var body = win.document.documentElement;
 body.style.margin = "0";
 body.style.padding = "0";
 win.document.body.appendChild(iframe)
-}
+}*/
 function openGame2() {
   var win = window.open()
-  win.document.innerHTML = '<video controls width="100%"><source src="https://py660.github.io/video.mp4" type="video/mp4"></video>'
+  win.document.write('<video controls width="100%"><source src="https://py660.github.io/video.mp4" type="video/mp4"></video>')
   document.innerHTML += '"Game" has been opened'
 }
 </script>
