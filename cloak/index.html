@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+<body>
+<button onclick="openGame()">Open Game</button>
+<script>
+function openGame() {
+var win = window.open()
+var url = "py660.github.io/video.mp4"
+var iframe = win.document.createElement('iframe')
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.border = "none";
+iframe.src = url
+var body = win.document.documentElement;
+body.style.margin = "0";
+body.style.padding = "0";
+win.document.body.appendChild(iframe)
+}
+</script>
+</body>
+</html>
