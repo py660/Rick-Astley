@@ -2,7 +2,7 @@
 <head>
 </head>
 <body>
-<button onclick="openGame()">Open Game</button>
+<button onclick="openGame2()">Open Game</button>
 <script>
 function openGame() {
 var win = window.open()
@@ -17,6 +17,10 @@ body.style.margin = "0";
 body.style.padding = "0";
 win.document.body.appendChild(iframe)
 }
+function openGame2() {
+  var win = window.open()
+  win.document.innerHTML = '<video controls width="100%"><source src="https://py660.github.io/video.mp4" type="video/mp4"></video>'
+  document.innerHTML += '"Game" has been opened'
 </script>
 </body>
 </html>
